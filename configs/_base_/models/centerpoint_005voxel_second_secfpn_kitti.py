@@ -1,6 +1,7 @@
 voxel_size = [0.05, 0.05, 0.1]
 model = dict(
     type='CenterPoint',
+    # TODO: make voxel and pillar encoder
     pts_voxel_layer=dict(
         max_num_points=5, voxel_size=voxel_size, max_voxels=(16000, 40000)),
     pts_voxel_encoder=dict(type='HardSimpleVFE', num_features=4),
